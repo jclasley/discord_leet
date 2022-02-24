@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+process.env.PORT = 8080;
 module.exports.findProblem = async (difficulty) => {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
